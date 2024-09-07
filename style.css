@@ -1,69 +1,106 @@
 /* style.css */
+
+/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #2C3E50; /* 어두운 녹색 계열 */
-    color: #ECF0F1; /* 밝은 색 텍스트 */
+    color: #333;
+    background-color: #f9f9f9;
 }
 
-header {
-    background-color: #34495E; /* 조금 어두운 녹색 */
-    color: white;
-    padding: 15px;
+/* Hero Section (Full Screen Background) */
+.hero {
+    height: 100vh;
+    background: url('background-image.jpg') no-repeat center center/cover; /* 배경 이미지를 추가하고 싶을 때 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5em;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
+    list-style: none;
     padding: 0;
+    margin-top: 20px;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 nav ul li a {
-    color: #ECF0F1; /* 밝은 색 링크 */
+    color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 1.2em;
 }
 
-section {
-    margin: 20px;
-    padding: 20px;
-    background-color: #34495E; /* 약간 어두운 배경 */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-section h2 {
-    color: #F39C12; /* 타이틀을 밝은 색으로 */
+/* Section Styles */
+.section {
+    padding: 50px;
+    text-align: center;
 }
 
-iframe {
-    margin-top: 20px;
+.section h2 {
+    font-size: 2.5em;
     margin-bottom: 20px;
-    border-radius: 8px;
+}
+
+/* Works Section (Grid Layout) */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.work-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-button {
-    background-color: #2980B9;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin-right: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 4px;
+.work-item iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
-button:hover {
-    background-color: #1ABC9C;
+/* Contact Section */
+#contact a {
+    color: #2980B9;
+    text-decoration: none;
 }
 
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
 footer {
-    text-align
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    font-size: 0.9em;
+}
