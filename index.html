@@ -21,24 +21,45 @@
     <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>Hello! I'm an artist passionate about both digital and traditional art forms. Below you can find my resume and some of my latest works.</p>
-        <!-- Resume PDF Download -->
-        <a href="resume.pdf" download>Download my Resume (PDF)</a> <!-- 'resume.pdf' 파일을 리포지토리에 올리고 링크 사용 -->
+        <p>Hello! I'm an artist passionate about both digital and traditional art forms. Below you can find my resume and breakdown of my work.</p>
+        
+        <!-- Resume and Breakdown PDF Download -->
+        <div>
+            <a href="resume.pdf" download>
+                <button>Download Resume (PDF)</button>
+            </a>
+            <a href="breakdown.pdf" download>
+                <button>Download Breakdown (PDF)</button>
+            </a>
+        </div>
     </section>
 
     <!-- Works Section -->
     <section id="works">
         <h2>My Works</h2>
         <p>Here are some of my featured works:</p>
-        <ul>
-            <li>Artwork 1</li>
-            <li>Artwork 2</li>
-            <li>Artwork 3</li>
-        </ul>
 
-        <!-- Demoreel Link -->
-        <h3>Demoreel</h3>
-        <p>Check out my <a href="https://www.youtube.com/demoreel" target="_blank">Demoreel</a>.</p> <!-- Demoreel URL 추가 -->
+        <!-- Work 1 (YouTube Video) -->
+        <h3>Artwork 1</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WUDyC12C4OQ" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+        <p>Check out more details on <a href="https://www.youtube.com/watch?v=WUDyC12C4OQ" target="_blank">YouTube</a>.</p>
+
+        <!-- Additional Works -->
+        <h3>Artwork 2</h3>
+        <p>Additional artworks can be displayed here.</p>
+    </section>
+
+    <!-- Demoreel Section -->
+    <section id="demoreel">
+        <h2>Demoreel</h2>
+        <!-- Vimeo Demoreel Embed -->
+        <iframe src="https://player.vimeo.com/video/105331804" 
+                width="640" height="360" frameborder="0" 
+                allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <p>Watch my Demoreel on <a href="https://vimeo.com/105331804" target="_blank">Vimeo</a>.</p>
     </section>
 
     <!-- Contact Section -->
@@ -46,7 +67,7 @@
         <h2>Contact</h2>
         <p>If you'd like to get in touch, feel free to send me an email:</p>
         <!-- Clickable email link -->
-        <a href="mailto:myemail@example.com">myemail@example.com</a> <!-- 이메일을 클릭하면 메일 클라이언트가 열림 -->
+        <a href="mailto:myemail@example.com">myemail@example.com</a>
     </section>
 
     <!-- Footer -->
